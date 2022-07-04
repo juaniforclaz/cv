@@ -44,7 +44,6 @@ section {
 
 .header {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     flex-direction: row;
 }
@@ -123,4 +122,36 @@ nav {
     padding: 5px;
     color: #1e9e33;
     left: 20px;
+}
+
+@media (max-width:62rem) {
+
+    .container {
+        border: #1e9e33 .3px solid;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 2rem;
+    }
+
+    .text {
+        color: #1e9e33;
+        letter-spacing: 1.5px;
+    }
+
+    .title {
+        letter-spacing: 3px;
+    }
+
+
+    nav {
+        height: fit-content;
+        width: 100%;
+        justify-content: center;
+
+        ul {
+            flex-direction: column;
+        }
+
+    }
+
 }
